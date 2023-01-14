@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>Milestone</title>
+</head>
+<body>
+    <h1>Hello World!/Milestone Library</h1>
+
+    
+    <div class="container">
+
+        <div class="comment_container opened" id="first-comment">
+            <div class="comment_card"> <!-- Logic... if I want to show a reply to this comment, then I don't want to put it in the comment card, I need to put it in a container. So I have created another container inside of the container-->
+                <h3>The Book</h3>
+                <p>
+                    <ul>
+                    <li> Author: Nicholas Bayardo Mejia</li>
+                    <li>Title: My life is so strange but I love it!</li>
+                    <li> My life, A memoir</li>
+                    <li>Language: English</li>
+                    </ul>
+                </p>
+                <div class="comment_card_footer">
+                    <div class="show-replies">Reply</div>
+                </div>
+
+                        <div class="comment_conatianer" dataset="first-comment" id="first-reply"> <!-- This is my container inside of the container that will nest the replies -->
+                            <!-- Dateset is related to the first comment. It tells me what this comment is related to. What is it's parent -->
+                            <!-- id="first-reply" exists so I can nest something inside of it, if I need -->
+
+
+                            <div class="comment_card">
+                            <h3>The comment about the book</h3>
+                            <p>
+                                The story line is inconsistent and it gives me anxiety.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repudiandae id consectetur commodi rem, nesciunt natus! Aut dolorum id minus sunt, minima inventore omnis natus accusantium eveniet rerum tempora repellat?
+                            </p>
+                            <div class="comment_card_footer">
+                            <div class="show-replies">Reply</div>
+                        </div>
+
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
