@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="shortcut icon" href="/img/book.jpeg">
+    <title>Library</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+            
+            <ul>
+                <li>Fullstack Library</li>
+                <li><a href="/index.html">Home</a>
+                <li><a href="/html/about.html">About</a>
+                <li><a href="/html/contact.html">Contact Us</a>
+            </ul>
+        </nav>
+    </header>
+
+    
+   <h1>Welcome! to The People's Library</h1>
+    <div class="grid">
+        
+        <div class="container">
+
+            <div class="comment_container opened" id="first-comment">
+                <div class="comment_card booksAdded">
+                    <h3>Add Your Book</h3>
+                        <div class="form">
+                            <input type="text" class="bookAuthor" placeholder="Author">
+                            <input type="text" class="bookTitle" placeholder="Title"> 
+                            <input type="text" class="bookSubject" placeholder="Subject">
+                            <input type="text" class="bookLanguage" placeholder="Language">
+                            <button class="submit" id="button">submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <center><h2 class="h2"></h2></center>
+        <div>
+            <div class="bookshelf-conatiner" id="bookshelf-container"></div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <center><h4>Nicholas Bayardo Mejia's Failed Project</h4></center>
+    </footer>
+    
+    
+    <script src="js/book-data.js"></script>
+    <script src="js/book.js"></script>
+    <script src="js/bookShelf.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/submissionForm.js"></script>
+    <script src="js/added.js"></script>
+</body>
+</html>
+
+<!-- <div class="booksAdded">
+    <div class="youAdded">level 2
+        <div>level3
+            <ul id="list">level4</ul>
+        </div>
+    </div>
+    <div class="form">
+        <input type="text" class="bookAuthor" placeholder="Author">
+        <input type="text" class="bookTitle" placeholder="Title"> 
+        <input type="text" class="bookSubject" placeholder="Subject">
+        <input type="text" class="bookLanguage" placeholder="Language">
+        <button class="submit" id="button">submit</button>
+    </div>
+
+</div> -->

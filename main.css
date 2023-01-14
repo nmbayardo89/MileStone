@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    margin-bottom: 20%;
+    padding-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-y: scroll;
+}
+
+/*---------------------------------------------------------------*/
+/*Beginning of Header and Nav Bar CSS*/
+/*---------------------------------------------------------------*/
+
+.header{
+    margin-top: 0px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.nav ul {
+    list-style: none;
+    background: skyblue;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    text-align: right;
+    position: fixed;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 25px 20px;
+}
+
+/*---------------------------------------------------------------*/
+/*End of Header and Nav Bar CSS*/
+/*---------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------*/
+/*Beginning of the add a book comment boxes*/
+/*---------------------------------------------------------------*/
+
+.container{
+    width: min(90%, 1140px); /* makes entire page responsive */ 
+    margin: 3rem auto;
+}
+
+.comment_container{
+    display: none;
+    position: relative;
+}
+
+.comment_container.opened{
+    display: block;
+}
+
+/* .comment_container::before{
+    content: "";
+    background-color: rgb(168, 168, 168);
+    position: absolute;
+    min-height: 100%;
+    width: 1px;
+    left: -10px;  
+} */
+
+.comment_container:not(:first-child){ 
+    /* The :not() CSS pseudo-class represents elements that do not match a list of selectors. Since it prevents specific items from being selected, it is known as the negation pseudo-class. */
+    
+    margin-left: 3rem; /* moves nested comments to the right to help readability*/
+    margin-top: 1rem; 
+    
+    /* In CSS rem stands for “root em”, a unit of measurement that represents the font size of the root element. This means that 1rem equals the font size of the html element, which for most browsers has a default value of 16px. Using rem can help ensure consistency of font size and spacing throughout your UI. */
+}
+
+.comment_card{ /* Come back and figure out why this isn't wokring */
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: .5rem; /* The border-radius CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners. */
+    min-width: 100%;
+    box-shadow: 0 0 5px 1px;
+}
+
+.comment_card_footer{
+    display: flex;
+    font-size: .85rem; /* 200px dived by 16 = rem*/
+    opacity: .6;
+    gap: 30px; /* The gap CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap. */
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.show-replies{
+    cursor: pointer;
+}
+/*---------------------------------------------------------------*/
+/*End of the add a book comment boxes*/
+/*---------------------------------------------------------------*/
+
+
+
+
+
+/*---------------------------------------------------------------*/
+/*Beginning of Books from bookdata.js CSS*/
+/*---------------------------------------------------------------*/
+
+/* .booksAdded{
+    border: solid red 1px;
+    height: 100px;
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+} */
+
+/* .youAdded{
+    border: solid red 1px;
+    width: 300px;
+    width: 200px;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+} */
+
+.bookshelf-conatiner{
+    /* border: solid red 1px; */
+    padding-bottom: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.bookContainer{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border: solid blue 1px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 10px 25px 0px;
+    overflow: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.imgBook{
+    background-image: url(/img/book.jpeg);
+    background-size: cover;
+    width: 150px;
+    height: 100px;
+}
+
+/*---------------------------------------------------------------*/
+/*End of Books from bookdata.js CSS*/
+/*---------------------------------------------------------------*/
+
+
+
+
+
+/*---------------------------------------------------------------*/
+/*Beginning of Footer CSS*/
+/*---------------------------------------------------------------*/
+
+#footer{
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    margin-top: 10px;
+    border: solid black 1px;
+    text-align: center;
+    background-color: skyblue;
+}
+
+/* .footGrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+/* .square{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 246px;
+    width: 221px;
+    border: 1px solid black
+    } */
+
+/*---------------------------------------------------------------*/
+/*End of Footer CSS*/
+/*---------------------------------------------------------------*/
